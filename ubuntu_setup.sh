@@ -92,6 +92,10 @@ sudo bash "$SCRIPT_DIR/scripts/13_terminator_config.sh" "$REAL_USER" "$USER_HOME
 echo -e "\n===== Running Docker Installation Script ====="
 sudo bash "$SCRIPT_DIR/scripts/14_docker_install.sh" "$REAL_USER" "$USER_HOME" "$SCRIPT_DIR"
 
+# Clipboard manager setup
+echo -e "\n===== Running Clipboard Manager Setup Script ====="
+sudo bash "$SCRIPT_DIR/scripts/15_clipboard_manager.sh" "$REAL_USER" "$USER_HOME" "$SCRIPT_DIR"
+
 # Source bashrc to apply changes
 source $USER_HOME/.bashrc
 

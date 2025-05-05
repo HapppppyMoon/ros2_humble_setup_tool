@@ -33,6 +33,7 @@ The script configures system settings, installs necessary software packages, set
   - GitKraken (07_other_software.sh)
   - Terminator with infinite scrollback (13_terminator_config.sh)
   - Docker CE with NVIDIA Container Toolkit support (14_docker_install.sh)
+  - CopyQ clipboard manager with Super+V shortcut (15_clipboard_manager.sh)
   - Development packages and utilities (04_software_packages.sh)
 
 - ROS2 Configuration
@@ -116,6 +117,9 @@ After installation, the system will be configured with:
 7. Terminator with infinite scrollback configuration
 8. NAS connection setup for shared storage
 9. Performance power profile activation
+10. Custom keyboard shortcuts:
+    - `Super+V`: Open CopyQ clipboard manager (with clipboard history)
+    - Automatic conflict resolution for shortcut keys
 
 ## Credits
 
