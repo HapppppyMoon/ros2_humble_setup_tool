@@ -19,35 +19,34 @@ The script configures system settings, installs necessary software packages, set
 ## Features
 
 - System Configuration
-  - GRUB timeout reduction
-  - APT mirror configuration (Korean Kakao mirror)
-  - Korean language input setup
-  - GNOME desktop environment customization
+  - GRUB timeout reduction (01_system_config.sh)
+  - APT mirror configuration (Korean Kakao mirror) (01_system_config.sh)
+  - Korean language input setup (02_korean_config.sh)
+  - GNOME desktop environment customization (12_gnome_settings.sh)
 
 - Software Installation
-  - ROS2 Humble desktop
-  - NVIDIA drivers (automatic detection and installation)
-  - Google Chrome (specific version pinning)
-  - MATLAB (interactive installation)
-  - Visual Studio Code
-  - GitKraken
-  - Terminator with infinite scrollback
-  - Development packages and utilities
+  - ROS2 Humble desktop (08_ros2_humble.sh)
+  - NVIDIA drivers (automatic detection and installation) (03_nvidia_drivers.sh)
+  - Google Chrome (specific version pinning) (05_chrome_install.sh)
+  - MATLAB (interactive installation) (06_matlab_install.sh)
+  - Visual Studio Code (07_other_software.sh)
+  - GitKraken (07_other_software.sh)
+  - Terminator with infinite scrollback (13_terminator_config.sh)
+  - Development packages and utilities (04_software_packages.sh)
 
 - ROS2 Configuration
-  - Complete ROS2 Humble installation
-  - Colcon build tools
-  - Environment setup
-  - Convenient aliases for building projects
+  - Complete ROS2 Humble installation (08_ros2_humble.sh)
+  - Colcon build tools (08_ros2_humble.sh)
+  - Environment setup (09_shell_config.sh)
+  - Convenient aliases for building projects (09_shell_config.sh)
 
 - Additional Tools
-  - Xbox controller drivers (xpadneo)
-  - Docker environment setup script
-  - Workspace initialization script
-  - Windows boot script for dual-boot systems
-  - NAS connection configuration
+  - Xbox controller drivers (xpadneo) (07_other_software.sh)
+  - Workspace initialization script (09_shell_config.sh)
+  - Windows boot script for dual-boot systems (09_shell_config.sh)
+  - NAS connection configuration (11_nas_setup.sh)
 
-- MCP Server Installation
+- MCP Server Installation (All in: 10_mcp_servers.sh)
   - Filesystem MCP server (@modelcontextprotocol/server-filesystem)
   - Agent Set MCP (@agentset/mcp)
   - YouTube MCP (@anaisbetts/mcp-youtube)
