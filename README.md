@@ -32,6 +32,7 @@ The script configures system settings, installs necessary software packages, set
   - Visual Studio Code (07_other_software.sh)
   - GitKraken (07_other_software.sh)
   - Terminator with infinite scrollback (13_terminator_config.sh)
+  - Docker CE with NVIDIA Container Toolkit support (14_docker_install.sh)
   - Development packages and utilities (04_software_packages.sh)
 
 - ROS2 Configuration

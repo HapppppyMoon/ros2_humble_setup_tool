@@ -88,6 +88,10 @@ sudo bash "$SCRIPT_DIR/scripts/12_gnome_settings.sh"
 echo -e "\n===== Running Terminator Configuration Script ====="
 sudo bash "$SCRIPT_DIR/scripts/13_terminator_config.sh" "$REAL_USER" "$USER_HOME" "$SCRIPT_DIR"
 
+# Docker installation
+echo -e "\n===== Running Docker Installation Script ====="
+sudo bash "$SCRIPT_DIR/scripts/14_docker_install.sh" "$REAL_USER" "$USER_HOME" "$SCRIPT_DIR"
+
 # Source bashrc to apply changes
 source $USER_HOME/.bashrc
 
