@@ -121,6 +121,44 @@ After installation, the system will be configured with:
     - `Super+V`: Open CopyQ clipboard manager (with clipboard history)
     - Automatic conflict resolution for shortcut keys
 
+## ROS2 Workspace Setup
+
+After installing ROS2 Humble, you can create and set up a ROS2 workspace:
+
+```bash
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws
+```
+
+Install dependencies for your ROS2 packages:
+```bash
+rosdep install --from-paths src -y --ignore-src
+```
+
+Build your workspace:
+```bash
+colcon build
+```
+
+## Available Scripts
+
+The setup tool includes the following scripts:
+- 01_system_config.sh: Basic system configuration
+- 02_korean_config.sh: Korean language support
+- 03_nvidia_drivers.sh: NVIDIA drivers installation
+- 04_software_packages.sh: Common software packages
+- 05_chrome_install.sh: Google Chrome installation
+- 06_matlab_install.sh: MATLAB installation
+- 07_other_software.sh: Additional software
+- 08_ros2_humble.sh: ROS2 Humble installation
+- 09_shell_config.sh: Shell configuration including aliases
+- 10_mcp_servers.sh: MCP servers setup
+- 11_nas_setup.sh: NAS configuration
+- 12_gnome_settings.sh: GNOME desktop settings
+- 13_terminator_config.sh: Terminator terminal configuration
+- 14_docker_install.sh: Docker installation
+- 15_clipboard_manager.sh: Clipboard manager setup
+
 ## Credits
 
 This tool was developed to streamline the setup process for robotics development environments using ROS2 Humble on Ubuntu 22.04.

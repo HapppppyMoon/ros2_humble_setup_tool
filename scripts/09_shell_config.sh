@@ -178,6 +178,9 @@ function input_workspace_path() {
         fi
         return 1
     fi
+
+    working_dir=$(pwd)
+    rosdep install --from-paths $working_dir/src -y --ignore-src
 }
 
 # Main function execution
@@ -252,8 +255,9 @@ source /usr/share/vcstool-completion/vcs.bash
 source /usr/share/colcon_cd/function/colcon_cd.sh
 source ~/initiate_bash.sh
 
-alias cbd='clear && sudo rm -rf ./log ./build ./install && colcon build --symlink-install --cmake-args " -DCMAKE_BUILD_TYPE=Debug" && clear'
-alias cbr='clear && sudo rm -rf ./log ./build ./install && colcon build --symlink-install --cmake-args " -DCMAKE_BUILD_TYPE=Release" && clear'
+alias cbd='clear && sudo rm -rf ./log ./build ./install && colcon build --cmake-args " -DCMAKE_BUILD_TYPE=Debug" && colcon build --cmake-args " -DCMAKE_BUILD_TYPE=Debug" && clear'
+alias cbr='clear && sudo rm -rf ./log ./build ./install && colcon build --cmake-args " -DCMAKE_BUILD_TYPE=Release" && colcon build --cmake-args " -DCMAKE_BUILD_TYPE=Release" && clear'
+alias cbf='clear && sudo rm -rf ./log ./build ./install && colcon build --cmake-args " -DCMAKE_BUILD_TYPE=RelWithDebInfo" && colcon build --cmake-args " -DCMAKE_BUILD_TYPE=RelWithDebInfo" && clear'
 BASHRCEOF
     echo ".bashrc updated with ROS2 configuration and aliases."
 else
