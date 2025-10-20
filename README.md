@@ -30,7 +30,6 @@ The script configures system settings, installs necessary software packages, set
   - Google Chrome (specific version pinning) (05_chrome_install.sh)
   - MATLAB (interactive installation) (06_matlab_install.sh)
   - Visual Studio Code (07_other_software.sh)
-  - GitKraken (07_other_software.sh)
   - Terminator with infinite scrollback (13_terminator_config.sh)
   - Docker CE with NVIDIA Container Toolkit support (14_docker_install.sh)
   - CopyQ clipboard manager with Super+V shortcut (15_clipboard_manager.sh)

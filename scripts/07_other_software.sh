@@ -14,12 +14,6 @@ sudo apt update
 sudo apt install -y code
 echo "===== Visual Studio Code installation completed ====="
 
-# GitKraken Installation
-echo
-echo "===== Installing GitKraken ====="
-sudo snap install gitkraken --classic
-echo "===== GitKraken installation completed ====="
-
 # xpadneo Installation
 echo
 echo "===== Installing xpadneo (Xbox controller driver) ====="
