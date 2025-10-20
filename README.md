@@ -48,15 +48,11 @@ The script configures system settings, installs necessary software packages, set
   - Windows boot script for dual-boot systems (09_shell_config.sh)
   - NAS connection configuration (11_nas_setup.sh)
 
-- MCP Server Installation (All in: 10_mcp_servers.sh)
-  - Filesystem MCP server (@modelcontextprotocol/server-filesystem)
-  - Agent Set MCP (@agentset/mcp)
-  - YouTube MCP (@anaisbetts/mcp-youtube)
-  - MCP Installer (@anaisbetts/mcp-installer)
-  - Smithery CLI (@smithery/cli)
-  - Papers With Code MCP (@hbg/mcp-paperswithcode)
-  - arXiv MCP (arxiv-mcp-server)
-  - Pandoc MCP (mcp-pandoc)
+- Claude Code Installation (10_claude_code.sh)
+  - nvm (Node Version Manager) - latest version
+  - Node.js LTS (Long Term Support) version
+  - Claude Code CLI tool (@anthropic-ai/claude-code)
+  - Automatic version management without hardcoded versions
 
 ## Installation
 
@@ -152,7 +148,7 @@ The setup tool includes the following scripts:
 - 07_other_software.sh: Additional software
 - 08_ros2_humble.sh: ROS2 Humble installation
 - 09_shell_config.sh: Shell configuration including aliases
-- 10_mcp_servers.sh: MCP servers setup
+- 10_claude_code.sh: Claude Code CLI installation
 - 11_nas_setup.sh: NAS configuration
 - 12_gnome_settings.sh: GNOME desktop settings
 - 13_terminator_config.sh: Terminator terminal configuration
